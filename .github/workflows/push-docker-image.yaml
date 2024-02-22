@@ -13,7 +13,8 @@ jobs:
     runs-on: ubuntu-latest  # runner name : (ubuntu latest version)
     steps:
       - uses: actions/checkout@v2 # first action : checkout source code
-      - uses: docker/login-action@v2
+      - name: Login to DockerHub
+        uses: docker/login-action@v2
         with:
             username: ${{ secrets.DOCKERHUB_USERNAME }}
             password: ${{ secrets.DOCKERHUB_TOKEN }}
