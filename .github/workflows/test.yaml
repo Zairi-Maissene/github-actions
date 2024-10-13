@@ -14,4 +14,4 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Run Vitest
-        run: npm run test -- --coverage  # Assuming `npm run test` runs Vitest with coverage
+        run: npm run test  # Assuming `npm run test` runs Vitest with coverage
