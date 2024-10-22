@@ -23,6 +23,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
           args: >
-            -Dsonar.projectKey=zairi-maissene
+            -Dsonar.projectKey=Zairi-Maissene_github-actions
             -Dsonar.organization=zairi-maissene
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
