@@ -26,3 +26,10 @@ jobs:
             -Dsonar.projectKey=Zairi-Maissene_github-actions
             -Dsonar.organization=zairi-maissene
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
+
+      - name: Snyk Vulnerability Scan
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}  # Ensure you've added your Snyk token to GitHub secrets
+        with:
+          args: test
