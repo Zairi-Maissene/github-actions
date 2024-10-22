@@ -31,5 +31,3 @@ jobs:
         uses: snyk/actions/node@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}  # Ensure you've added your Snyk token to GitHub secrets
-        with:
-          args: test
